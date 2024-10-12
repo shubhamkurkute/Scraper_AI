@@ -1,0 +1,179 @@
+{
+    // State code of Scraper
+    "state_code": "OTH",
+    // Unique Scrapper id.
+    "scraper_id": "OdmtyD",
+    // Timestamp of scraper creation
+    "created_at": "2024-10-08 10:19:45.066735",
+    // Username and name of user who created the scraper
+    "created_by": "I39877@woodmacad.com | Bhosale, Dhiraj",
+    // Time at which scraper was created
+    "creation_time": "08-10-2024-10:43:20",
+    // Username and name of user who deleted the scraper
+    "deleted_by": "",
+    "delete_item": 1730976200,
+    // Boolean value
+    "disable_expiration": false,
+    "executed_by": "",
+    // Epoch for expiration date
+    "expiration_date": 1733653185,
+    // Group of scraper in which it belongs
+    "group_name": "Subsurface Data - Kaz",
+    "last_edited_at": "",
+    "last_edited_by": "",
+    // Name of scraper
+    "name": "TEst",
+    // Previous name of scraper
+    "previous_scraper_name": "",
+    // List of primary attributes
+    "primary_attributes": [],
+    // Boolean value
+    "production_mode": false,
+    // List to run scraper at frequency
+    "run_frequency": [],
+    // Scraper parameters
+    "scraper_params": {
+        // List of cookies for scraper
+        "cookies": [
+            {
+                "name": "production",
+                "value": "SURVEY"
+            }
+        ],
+        // Custom logic provided by user
+        "custom_logic": {
+            "cleaned_lambda_inputs": "{\"function\": \"\", \"function_type\": \"\"}",
+            "lambda_arn": "arn:aws:lambda:us-east-1:204359864429:function:l48-custom-post-processing-lambda-prod:$LATEST",
+            "raw_lambda_inputs": "{\n\t\"function\": \"\", \n\t\"function_type\": \"\"\n}",
+            "selected_function": "predefined_1"
+        },
+        // Boolean Value
+        "custom_logic_required": true,
+        "custom_wait_time_between_requests": 0,
+        "data_extraction": {
+            "file": {
+                // Contains all the decoder settings for file type.
+                "decoder_settings": {},
+                "download_with_click_sequence": {
+                    // List if click sequence to be clicked
+                    "click_sequence_keywords": [],
+                    // Boolean value
+                    "is_enabled": true
+                },
+                // It contains the type of file
+                "file_types": {},
+                // Boolean Value
+                "is_enabled": true,
+                "page_selection_kv": []
+            },
+            "html": {
+                // Boolean Value
+                "is_enabled": true
+            }
+        },
+        "date_input": {
+            // This list contains the list of dates range for form filling
+            "duration_ranges": [
+                {
+                    "start": {
+                        "method": "ABSOLUTE",
+                        "month": 5,
+                        "type": "by_month",
+                        "year": 2024
+                    },
+                    "stop": {
+                        "method": "ABSOLUTE",
+                        "month": 8,
+                        "type": "by_month",
+                        "year": 2024
+                    }
+                }
+            ],
+            "query_duration_fields": {
+                "from": [],
+                "to": []
+            }
+        },
+        // Default browser to be used
+        "default_browser": "Google Chrome",
+        // Boolean Value
+        "download_file_only": true,
+        // Boolean Value
+        "form_filling_required": true,
+        "ftp_port_number": "",
+        "group_name": "",
+        // List of clickables
+        "headers_to_visit_clickables": [],
+        // Boolean Value
+        "incremental_mode": true,
+        // Boolean Value
+        "is_manual_mode": false,
+        // List of keywords for navigation
+        "keywords_to_navigate": [],
+        // List of keywords to visit in a row of table
+        "keywords_to_visit_clickables_in_a_row": [],
+        // Boolean Value
+        "key_to_attribute_mapping": true,
+        "multi_submit_button": {
+            // Boolean Value
+            "is_enabled": true,
+            // Text of submit button
+            "submit_text": ""
+        },
+        "names_to_visit_tab": [],
+        // Boolean Value
+        "page_authentication": true,
+        // Depth of page i.e. no. of pages of website
+        "page_depth_limit": 1,
+        // This includes page description
+        "page_description": {},
+        // Boolean Value
+        "page_description_switch": true,
+        // Time for loading of a webpage
+        "page_loading_timeout": 30,
+        "partition": {
+            // Batch size
+            "query_batch_size": 1
+        },
+        // Boolean Value
+        "perform_navigation": true,
+        // Boolean Value
+        "perform_pagination": true,
+        // If processing of external file is required
+        "query_input_ext_src_info": {
+            // Method for external file
+            "method": "PURELY_EXT"
+        },
+        // Boolean Value
+        "query_input_from_external_src": true,
+        // Define the schema for the input.
+        "query_input_schema": {
+            "fields": {}
+        },
+        "successive_scrapers": [],
+        "successive_scrapers_batch_size": "",
+        "task_resource": {
+            "memory": "3072",
+            "vcpu": "0.5"
+        },
+        // Boolean Value
+        "use_proxy": true,
+        // Boolean Value
+        "use_static_ip": true,
+        // Boolean Value
+        "visit_clickables": true,
+        // Boolean Value
+        "visit_dynamic_tabs": true,
+        // Boolean Value
+        "visit_other_domains": true
+    },
+    "src_type_description": "",
+    // State of website needed to scrape
+    "state": "Other",
+    // Type of scraper
+    "type": "HTML",
+    // URL of scraper
+    "url": "https://public.occ.ok.gov/OGCDWellRecords/CustomSearch.aspx?SearchName=OilandGasWellRecordsSearch&dbid=0&repo=OCC",
+    // User group of scraper.
+    "user_group_name": "Subsurface Data - Kaz"
+}
