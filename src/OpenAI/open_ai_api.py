@@ -1,6 +1,8 @@
 import openai
 import os
 from .file_handler import FileHandler
+from pydantic import BaseModel
+from .scraper_definition import TableData
 
 
 class OpenAIConnection:
@@ -9,29 +11,33 @@ class OpenAIConnection:
         file_handle = FileHandler()
         openai.api_key = os.environ["OPEN_API_KEY"]
         prompt = html_table_src
-        response_json = '''
-        {
-        "table_no": "Int",
-        "row_index": "Int"
-        "css_selector": "String",
-        "attrs": {
-            "class": "String",
-            "id": "String",
-            "name": "String"
-            }
-        }'''
-
-
-# Initialize the completion
-        completion = openai.chat.completions.create(
-            model="gpt-4-0613",
+        # response_json = '''
+        # {
+        # "table_no": "Int",
+        # "row_index": "Int"
+        # "css_selector": "String",
+        # "attrs": {
+        #     "class": "String",
+        #     "id": "String",
+        #     "name": "String"
+        #     }
+        # }'''
+        response_schema = file_handle.json_schema_reader()
+        completion = openai.beta.chat.completions.parse(
+            model="gpt-4o-2024-08-06",
             messages=[
-                {"role": "system", "content": "You are a expert HTML extractor. From the provided source identify the head row. Create a CSS selector for the head row. Steps for CSS selector: Create a CSS selector on the basis of design or inline styling of head row as the table can be nested table. Also provide all the fields mentioned by the user in strictly specified JSON format user. Do not include any additional explainations, just return the JSON."},
-                {"role": "user", "content": f"From the source:{html_table_src} identify head row, head row number inside the table starting index as 0 and CSS selector for the head row from the table, also give all the text of head row along with the attributes such as class, id and name. The response format should be in strictly specified JSON: {response_json}. Table number is {table_no}"}
+                {"role": "system", "content": "You are an expert HTML extractor. From the provided source, identify the head row. Create a CSS selector for the head row. Steps for CSS selector: Create a CSS selector on the basis of design or inline styling of the head row as the table can be nested. Also, provide all the fields asked by the user."},
+                {"role": "user", "content": f"From the source:{html_table_src}, identify the head row, head row number inside the table starting index as 0, and CSS selector for the head row from the table. Also give all the text or names of head row along with the attributes such as class, id, and name. Inject table number into response and table number is {table_no}"}
             ],
             temperature=0,
+            response_format={
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "math_reponse",
+                    "schema": response_schema
+                }
+            }
+                
         )
-
-        # Print the result
-        print(completion.choices[0].message.content)
+        print(completion.choices[0].message.parsed)
         file_handle.file_writer(table_no, completion.choices[0].message.content)

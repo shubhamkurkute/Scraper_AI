@@ -1,0 +1,46 @@
+{
+    "type": "object",
+    "properties": {
+        "table_no": {
+            "type": "integer"
+        },
+        "row_index": {
+            "type": "integer"
+        },
+        "css_selector": {
+            "type": "string"
+        },
+        "attrs": {
+            "type": "object",
+            "properties": {
+                "class": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "class",
+                "id",
+                "name"
+            ]
+        },
+        "head_row_names": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "table_no",
+        "row_index",
+        "css_selector",
+        "attrs",
+        "head_row_names"
+    ]
+}

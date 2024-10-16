@@ -1,11 +1,16 @@
 {
     "table_no": 0,
-    "row_index": 0,
-    "css_selector": "table tr[bgcolor='999999']",
+    "row_index": 1,
+    "css_selector": "table > tr[bgcolor='CCCCCC']",
     "attrs": {
         "class": "",
         "id": "",
         "name": ""
     },
-    "text": ["New Search", "Production Data", "Excel Export"]
+    "head_row_names": [
+        "Location:",
+        "SWSE Sec 03 Twp 020N Rng 04E",
+        "Facility ID:",
+        "SDEN4006320100"
+    ]
 }

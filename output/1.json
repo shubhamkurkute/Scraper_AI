@@ -1,11 +1,15 @@
 {
-"table_no": 1,
-"row_index": 2,
-"css_selector": "table tr:nth-child(3)",
-"attrs": {
-    "class": "",
-    "id": "",
-    "name": ""
+    "table_no": 1,
+    "row_index": 1,
+    "css_selector": "table tr:nth-of-type(2)",
+    "attrs": {
+        "class": "",
+        "id": "",
+        "name": ""
     },
-"text": ["Total Oil (bbls)", "Total Gas (mcf)", "Total Water (bbls)"]
+    "head_row_names": [
+        "Total Oil (bbls)",
+        "Total Gas (mcf)",
+        "Total Water (bbls)"
+    ]
 }
