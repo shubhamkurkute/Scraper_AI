@@ -22,7 +22,12 @@ try:
                     del tag.attrs['cellspacing']
                 if 'bordercolor' in tag.attrs:
                     del tag.attrs['bordercolor']
-            clean_html = table.prettify()
+            rows = table.find_all('tr')[:5]
+            new_table = soup.new_tag("table")
+            for row in rows:
+                new_table.append(row)
+
+            clean_html = new_table.prettify()
             open_ai_connect.open_ai_connect(clean_html, i)
             print(clean_html)
 except FileNotFoundError:

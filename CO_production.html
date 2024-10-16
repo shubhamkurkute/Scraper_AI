@@ -1,146 +1,4746 @@
-<!DOCTYPE html>
-<!-- saved from url=(0117)https://cogcc.state.co.us/cogisdb/Production/MonthlyProdRpt?Grouping=WELL&APICountyCode=123&APISeqNum=29996&Year=2022 -->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>
-	Production Search
-</title><link id="Stylesheet" rel="stylesheet" type="text/css" href="./CO_production_files/Styles.css"> 
-     <style>
-        .grdContent
-        {
-            width: 100%;
-            border: none 0px transparent;
-            min-width: 100%;
-        }
-        .header {            
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            color: White;
-            border: none 0px transparent;
-            height: 25px;
-            font-size: 11px;
-            position: absolute;
-            width: 100%;
-        }
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-        .header2 {
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            color: White;
-            border: none 0px transparent;
-            height: 25px;
-            font-size: 11px;
-            position: absolute;
-            width: 100%;
-        }
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Production Data</title>
 
-         .rows {
-             background-color: #ffffff;
-             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-             font-size: 11px;
-             color: #000000;
-             min-height: 16px;
-             text-align: left;
-             border: solid 1px black;
-         }
+    <script type="text/javascript">
 
-             .rows:hover {
-                 background-color: #FFD700;
-                 font-family: Arial;
-                 color: blue;
-                 text-align: left;
-             }
-        .selectedrow {
-            background-color: #000066;
-            font-family: Arial;
-            color: #ffffff;
-            font-weight: bold;
-            text-align: left;
-        }
-        .mydatagrid a /** PAGING ICONS  **/ {
-            background-color: Transparent;
-            padding: 4px 4px 4px 4px;
-            color: #FFD700;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .mygrdContent a:hover
-        {
-            background-color: #ffffff;
-            color: #006633;
-        }
-        .mygrdContent span /** CURRENT PAGE ICON **/ {
-            background-color: #000066;
-            color: #FFD700;
-            padding: 5px 5px 5px 5px;
-        }
-        .pager {
-            background-color: #000066;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            color:#FFD700;
-            height: 18px;
-            text-align: left;
-        }
-        .mygrdContent td {
-            padding: 4px;
-        }
-        .mygrdContent th {
-            padding: 4px;
-        }
-    </style> 
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22058144-3']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
 </head>
-<body>
-<form method="post" action="https://cogcc.state.co.us/cogisdb/Production/MonthlyProdRpt?Grouping=WELL&amp;APICountyCode=123&amp;APISeqNum=29996&amp;Year=2022" id="formProductionRpt">
-<div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="SL0IqxkHl6GJhmWiXbKSX4b0vnf1GD8Hs9jWP+jvB1qLujzM17rI4nv+MJSFjk2zqyOzJYME3QLjWoJQEksaFdDFFkHHlwPuMvoy2XPvd3FikyTCG9NynYdyKXU88vaSU2cjqp5Adb4J/D3roAQOCKgJkAdB2g77RlkUUxofwFjib3h5sGQXJ7ttHg7UYGsyBB+ifBRusx5uxsAb47xWDKZca0z+A/2+l61vGTkZqXQzg/R89b7tT2/+KXqdmhPZUNNqeZdU0ka0t1CBECgtrKIk3wfZj8tpqnwyEt4wXlhEJHcPnGcB1P7APy6K4GpFW0pUKmiYxI6nI4/JTlmqQ1azkC8j2tyfE76GNa8l+ENCB/JudDJqojXNausfSP5szE44fLeY78vYkcy/omgAS8TFxyrSr3jD2ZP4ewkDiSQ5phqRk9zbUP/0Ee5I9h9A">
-</div>
 
-<div class="aspNetHidden">
+<body bgcolor="white" text="black" link="black" vlink="black" alink="black" style="font-family: Arial">
+    <a name="top" />
+    <div align="center"><a href="index.cfm"><img border="0" src="toplogo.jpg"></a></div>
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FBAFC5DC">
-</div>
-<table style="width:100%;">       
-    <tbody><tr>
-        <td>
-            
-        </td>
-    </tr>
-    <tr>
-        <td style="bgcolor=" #ffd700"="">
-            <span id="lblHeading" class="labelLargeBold">Production Data</span>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <table style="width:60%;" border="1" display:="" border-color:="" black;="" cellspacing="0" ;=""><tbody><tr bgcolor="lightgray"><td align="center"><span class="labelSmall"><strong>API #:</strong></span></td><td align="center"><span class="labelSmall"><strong>Facility Name/Number:</strong></span></td><td align="center"><span class="labelSmall"><strong>Operator Name:</strong></span></td><td align="center"><span class="labelSmall"><strong>Operator #:</strong></span></td><td align="center"><span class="labelSmall"><strong>Location:</strong></span></td><td align="center"><span class="labelSmall"><strong>Field:</strong></span></td><td align="center"><span class="labelSmall"><strong>Field Code:</strong></span></td></tr><tr><td><span class="labelSmall">05-123-29996</span></td><td align="center"><span class="labelSmall">PAVISTMA-4-22           </span></td><td align="center"><span class="labelSmall">KERR MCGEE OIL &amp; GAS ONSHORE LP                   </span></td><td align="center"><span class="labelSmall">47120</span></td><td align="center"><span class="labelSmall">NWNW   4  5N     67W     6</span></td><td align="center"><span class="labelSmall">WATTENBERG                    </span></td><td align="center"><span class="labelSmall">90750</span></td></tr></tbody></table>
-        </td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>
-            
-        </td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td>
-            <span id="lblProdYear" class="labelSmall" style="font-weight:bold;">PRODUCTION YEAR: 2022</span>
-        </td>
-    </tr>
-    <tr>
-        <td>
-               <div style="height:800px; width:" 1725px";="" overflow:auto;"="">
-               
-                            
-              </div>
-            </td>  
+
+
+    <table border="0" width="90%" align="center" cellspacing="0">
+        <tr bgcolor="999999">
+            <td align="center" colspan="1" height="40">
+                <form action="index.cfm">
+                    <input name="index" type="submit" value="New Search" />
+                </form>
+            </td>
+            <td align="center" colspan="2" height="40"><b>
+                    <font size="3">Production Data</font>
+                </b></td>
+            <td align="center" colspan="1" height="40">
+                <form action="excel_prod.cfm" method="post" enctype="application/x-www-form-urlencoded" name="export">
+                    <input type="submit" name="export" value="Excel Export" />
+                    <input name="API" type="hidden" id="API" value="SDEN4006320100">
+                </form>
+            </td>
+        </tr>
+        <tr bgcolor="CCCCCC">
+            <td width="25%" height="25" nowrap>
+                <font size="2">
+                    <div align="center"><strong>Location:</strong></div>
+                </font>
+            </td>
+            <td width="25%" height="25" nowrap>
+                <font size="2">SWSE Sec 03 Twp 020N Rng 04E</font>
+            </td>
+            <td width="25%" height="25" nowrap><b>
+                    <font size="2">
+                        <div align="center">Facility ID:</div>
+                    </font>
+                </b></td>
+            <td width="25%" height="25" nowrap>
+                <font size="2">SDEN4006320100</font>
+            </td>
+        </tr>
+    </table>
+    <table border="0" width="90%" align="center" cellspacing="0">
+        <tr>
+            <td colspan="4" height="10">&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td width="20%" align="center">
+            </td>
+            <td width="20%" align="center">
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2"><b><u>Total Oil (bbls)</u></b></font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2"><b><u>Total Gas (mcf)</u></b></font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2"><b><u>Total Water (bbls)</u></b></font>
+                </div>
+            </td>
         </tr>
-</tbody></table>
-</form>
+        <tr>
+            <td width="20%" align="center">&nbsp;</td>
+            <td width="20%" align="center">&nbsp;</td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">11,174</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">925</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">11,591</font>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" height="10" colspan="6">&nbsp;</td>
+        </tr>
+    </table>
+
+    <table border="0" width="90%" align="center">
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2"><b><u>API Number</u></b></font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2"><b><u>Production Date</u></b></font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2"><b><u>Oil (bbls)</u></b></font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2"><b><u>Gas (Mcf)</u></b></font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2"><b><u>Water (bbls)</u></b></font>
+                </div>
+            </td>
+        </tr>
 
 
 
-</body></html>
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        May 1986
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        April 1986
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        March 1986
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        February 1986
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        January 1986
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        December 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        November 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        October 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        September 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        August 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        July 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        June 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        May 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        April 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        March 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        February 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        January 1985
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        December 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        November 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        October 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        September 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        August 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        July 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        June 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        May 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        April 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        March 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        February 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        January 1984
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        December 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        November 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        October 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        September 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        August 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        July 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        June 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        May 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        April 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        March 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        February 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        January 1983
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        December 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        November 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        October 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        September 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        August 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        July 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        June 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        May 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        April 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        March 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        February 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        January 1982
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        December 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        November 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        October 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        September 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        August 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        July 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        June 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        May 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        April 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        March 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        February 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        January 1981
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        December 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        November 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        October 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        September 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        August 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        July 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        June 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        May 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        April 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        March 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        February 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        January 1980
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        December 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        November 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        October 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        September 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        August 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        July 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        June 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        May 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        April 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        March 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        February 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        January 1979
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        December 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        November 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        October 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        September 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        August 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        July 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        June 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        May 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        April 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        March 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        February 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        January 1978
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        December 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        November 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        October 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        September 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        August 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">0</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        July 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">437</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">37</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">473</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        June 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">664</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">31</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">395</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        May 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">939</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">80</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,017</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        April 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,100</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">95</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,192</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        March 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,332</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">113</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,443</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        February 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">936</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">79</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,014</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        January 1977
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">938</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">80</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,016</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        December 1976
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,042</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">88</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,129</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        November 1976
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,011</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">86</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,455</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        October 1976
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,325</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">113</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,555</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        September 1976
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">1,091</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">93</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">677</font>
+                </div>
+            </td>
+        </tr>
+
+
+
+        <!-- ADD 6 HOURS TO DATES -->
+
+
+
+
+
+
+        <tr>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">40 063 20100</font>
+                </div>
+            </td>
+            <td width="20%" height="21" nowrap>
+                <div align="center">
+                    <font size="2">
+                        August 1976
+                    </font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">359</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">30</font>
+                </div>
+            </td>
+            <td width="20%" align="center">
+                <div align="center">
+                    <font size="2">225</font>
+                </div>
+            </td>
+        </tr>
+
+    </table>

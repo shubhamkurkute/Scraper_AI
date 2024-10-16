@@ -1,0 +1,11 @@
+{
+"table_no": 2,
+"row_index": 0,
+"css_selector": "table:nth-of-type(2) tr:first-child",
+"attrs": {
+    "class": "",
+    "id": "",
+    "name": ""
+    },
+"text": ["API Number", "Production Date", "Oil (bbls)", "Gas (Mcf)", "Water (bbls)"]
+}

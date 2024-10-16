@@ -1,13 +1,11 @@
 {
-    "table_no": 1,
-    "css_selector": "table > tbody > tr:first-child",
-    "head_row": {
-        "row_no": 1,
-        "text": ["API #:", "Facility Name/Number:", "Operator Name:", "Operator #:", "Location:", "Field:", "Field Code:"],
-        "attrs": {
-            "class": "labelSmall",
-            "id": null,
-            "name": null
-        }
-    }
+"table_no": 1,
+"row_index": 2,
+"css_selector": "table tr:nth-child(3)",
+"attrs": {
+    "class": "",
+    "id": "",
+    "name": ""
+    },
+"text": ["Total Oil (bbls)", "Total Gas (mcf)", "Total Water (bbls)"]
 }
